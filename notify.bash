@@ -15,7 +15,7 @@ while inotifywait -r -e close_write "$file"; do
       echo "diff=$diff"         
       if [ ${diff} -ge 0 ]; then
         echo size is over $maxsize kilobytes
-        curl --location --request POST "$url" --header '$TOKEN'
+        curl --location --request POST "$url" --header "$TOKEN"
     else
         echo size is under $maxsize kilobytes
     fi
