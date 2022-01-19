@@ -1,6 +1,6 @@
 #!/bin/bash
 command_name=`basename "$0"`
-. filesizebash.ini
+. conf.ini
 
 url="$BASE_URL/$WORKSPACE/arian/notif/admin-notifications"
 file="$BASE_PATH/shared/sites/$WORKSPACE/log/"
